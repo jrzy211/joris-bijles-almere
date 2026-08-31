@@ -1,127 +1,117 @@
 import { useState } from "react";
 import { SITE } from "@/lib/site";
 
-const subjects = ["Wiskunde", "Natuurkunde", "Scheikunde", "Economie", "Meerdere vakken"];
-const forms = ["Online bijles", "Bijles bij mij thuis (Almere e.o.)", "Nog niet zeker"];
+const vakken = [
+  "Wiskunde",
+  "Natuurkunde",
+  "Scheikunde",
+  "Economie",
+  "Huiswerkbegeleiding",
+  "Examenvoorbereiding",
+];
 
-export function ContactForm() {
+export function ContactForm({ id = "kennismaking" }: { id?: string }) {
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    const d = new FormData(e.currentTarget);
     const body = [
-      `Naam: ${data.get("naam")}`,
-      `E-mail: ${data.get("email")}`,
-      `Telefoon: ${data.get("telefoon")}`,
-      `Niveau / klas: ${data.get("niveau")}`,
-      `Vak: ${data.get("vak")}`,
-      `Vorm: ${data.get("vorm")}`,
+      `Naam: ${d.get("naam")}`,
+      `Contact: ${d.get("contact")}`,
+      `Vak: ${d.get("vak")}`,
+      `Niveau / leerjaar: ${d.get("niveau")}`,
       "",
-      `Bericht:`,
-      `${data.get("bericht")}`,
+      "Waar hulp bij nodig:",
+      `${d.get("hulp")}`,
     ].join("\n");
     window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(
-      "Aanvraag gratis kennismaking",
+      "Gratis kennismaking aanvragen",
     )}&body=${encodeURIComponent(body)}`;
     setSent(true);
   }
 
   const field =
-    "w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-ring focus:ring-2 focus:ring-ring/25";
+    "w-full rounded-xl border border-input bg-background px-4 py-3 text-base text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-ring focus:ring-2 focus:ring-ring/25";
   const label = "mb-1.5 block text-sm font-semibold text-foreground";
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-5">
+    <form id={id} onSubmit={handleSubmit} className="grid gap-5">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label className={label} htmlFor="naam">
+          <label className={label} htmlFor={`${id}-naam`}>
             Naam
           </label>
-          <input id="naam" name="naam" required className={field} placeholder="Voor- en achternaam" />
+          <input id={`${id}-naam`} name="naam" required className={field} placeholder="Je naam" />
         </div>
         <div>
-          <label className={label} htmlFor="email">
-            E-mailadres
+          <label className={label} htmlFor={`${id}-contact`}>
+            E-mail of telefoonnummer
           </label>
           <input
-            id="email"
-            name="email"
-            type="email"
+            id={`${id}-contact`}
+            name="contact"
             required
             className={field}
-            placeholder="naam@voorbeeld.nl"
+            placeholder="Waar mag ik je bereiken?"
           />
         </div>
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <label className={label} htmlFor="telefoon">
-            Telefoonnummer
-          </label>
-          <input id="telefoon" name="telefoon" className={field} placeholder="06 - " />
-        </div>
-        <div>
-          <label className={label} htmlFor="niveau">
-            Niveau en klas
-          </label>
-          <input id="niveau" name="niveau" className={field} placeholder="bijv. 4 havo" />
-        </div>
-      </div>
-
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div>
-          <label className={label} htmlFor="vak">
+          <label className={label} htmlFor={`${id}-vak`}>
             Vak
           </label>
-          <select id="vak" name="vak" className={field}>
-            {subjects.map((s) => (
-              <option key={s}>{s}</option>
+          <select id={`${id}-vak`} name="vak" className={field}>
+            {vakken.map((v) => (
+              <option key={v}>{v}</option>
             ))}
           </select>
         </div>
         <div>
-          <label className={label} htmlFor="vorm">
-            Voorkeur
+          <label className={label} htmlFor={`${id}-niveau`}>
+            Niveau / leerjaar
           </label>
-          <select id="vorm" name="vorm" className={field}>
-            {forms.map((s) => (
-              <option key={s}>{s}</option>
-            ))}
-          </select>
+          <input
+            id={`${id}-niveau`}
+            name="niveau"
+            className={field}
+            placeholder="bijv. 4 HAVO"
+          />
         </div>
       </div>
 
       <div>
-        <label className={label} htmlFor="bericht">
-          Waar loopt het vast?
+        <label className={label} htmlFor={`${id}-hulp`}>
+          Waar heb je hulp bij nodig?
         </label>
         <textarea
-          id="bericht"
-          name="bericht"
-          rows={4}
+          id={`${id}-hulp`}
+          name="hulp"
+          rows={3}
           className={field}
-          placeholder="Vertel kort waar je tegenaan loopt en wanneer je zou willen starten."
+          placeholder="Vertel kort waar je tegenaan loopt."
         />
       </div>
 
       <button
         type="submit"
-        className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5"
+        className="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5"
       >
-        Plan een gratis kennismaking
+        Gratis kennismaking aanvragen
       </button>
 
-      {sent && (
+      {sent ? (
         <p className="text-sm text-muted-foreground">
-          Je mailprogramma is geopend met je gegevens. Geen mailprogramma? Stuur dan een
-          WhatsApp-bericht — meestal reageer ik binnen een paar uur.
+          Je e-mailprogramma is geopend met je gegevens. Liever direct contact? Stuur dan een
+          WhatsApp-bericht.
+        </p>
+      ) : (
+        <p className="text-sm text-muted-foreground">
+          Vrijblijvend kennismaken van ongeveer 15 minuten. Geen verplichting.
         </p>
       )}
-      <p className="text-xs text-muted-foreground">
-        Een kennismaking van 20 minuten is altijd gratis en vrijblijvend.
-      </p>
     </form>
   );
 }
