@@ -10,33 +10,206 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BijlesAlmereRouteImport } from './routes/bijles-almere'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as EconomieBijlesAlmereRouteImport } from './routes/economie-bijles-almere'
+import { Route as ExamenhulpAlmereRouteImport } from './routes/examenhulp-almere'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as NatuurkundeBijlesAlmereRouteImport } from './routes/natuurkunde-bijles-almere'
+import { Route as NiveausRouteImport } from './routes/niveaus'
+import { Route as OnlineBijlesRouteImport } from './routes/online-bijles'
+import { Route as OverJorisRouteImport } from './routes/over-joris'
+import { Route as ScheikundeBijlesAlmereRouteImport } from './routes/scheikunde-bijles-almere'
+import { Route as TarievenRouteImport } from './routes/tarieven'
+import { Route as VakkenRouteImport } from './routes/vakken'
+import { Route as WiskundeBijlesAlmereRouteImport } from './routes/wiskunde-bijles-almere'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BijlesAlmereRoute = BijlesAlmereRouteImport.update({
+  id: '/bijles-almere',
+  path: '/bijles-almere',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EconomieBijlesAlmereRoute = EconomieBijlesAlmereRouteImport.update({
+  id: '/economie-bijles-almere',
+  path: '/economie-bijles-almere',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExamenhulpAlmereRoute = ExamenhulpAlmereRouteImport.update({
+  id: '/examenhulp-almere',
+  path: '/examenhulp-almere',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NatuurkundeBijlesAlmereRoute = NatuurkundeBijlesAlmereRouteImport.update({
+  id: '/natuurkunde-bijles-almere',
+  path: '/natuurkunde-bijles-almere',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NiveausRoute = NiveausRouteImport.update({
+  id: '/niveaus',
+  path: '/niveaus',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnlineBijlesRoute = OnlineBijlesRouteImport.update({
+  id: '/online-bijles',
+  path: '/online-bijles',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OverJorisRoute = OverJorisRouteImport.update({
+  id: '/over-joris',
+  path: '/over-joris',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScheikundeBijlesAlmereRoute = ScheikundeBijlesAlmereRouteImport.update({
+  id: '/scheikunde-bijles-almere',
+  path: '/scheikunde-bijles-almere',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TarievenRoute = TarievenRouteImport.update({
+  id: '/tarieven',
+  path: '/tarieven',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VakkenRoute = VakkenRouteImport.update({
+  id: '/vakken',
+  path: '/vakken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WiskundeBijlesAlmereRoute = WiskundeBijlesAlmereRouteImport.update({
+  id: '/wiskunde-bijles-almere',
+  path: '/wiskunde-bijles-almere',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bijles-almere': typeof BijlesAlmereRoute
+  '/contact': typeof ContactRoute
+  '/economie-bijles-almere': typeof EconomieBijlesAlmereRoute
+  '/examenhulp-almere': typeof ExamenhulpAlmereRoute
+  '/faq': typeof FaqRoute
+  '/natuurkunde-bijles-almere': typeof NatuurkundeBijlesAlmereRoute
+  '/niveaus': typeof NiveausRoute
+  '/online-bijles': typeof OnlineBijlesRoute
+  '/over-joris': typeof OverJorisRoute
+  '/scheikunde-bijles-almere': typeof ScheikundeBijlesAlmereRoute
+  '/tarieven': typeof TarievenRoute
+  '/vakken': typeof VakkenRoute
+  '/wiskunde-bijles-almere': typeof WiskundeBijlesAlmereRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bijles-almere': typeof BijlesAlmereRoute
+  '/contact': typeof ContactRoute
+  '/economie-bijles-almere': typeof EconomieBijlesAlmereRoute
+  '/examenhulp-almere': typeof ExamenhulpAlmereRoute
+  '/faq': typeof FaqRoute
+  '/natuurkunde-bijles-almere': typeof NatuurkundeBijlesAlmereRoute
+  '/niveaus': typeof NiveausRoute
+  '/online-bijles': typeof OnlineBijlesRoute
+  '/over-joris': typeof OverJorisRoute
+  '/scheikunde-bijles-almere': typeof ScheikundeBijlesAlmereRoute
+  '/tarieven': typeof TarievenRoute
+  '/vakken': typeof VakkenRoute
+  '/wiskunde-bijles-almere': typeof WiskundeBijlesAlmereRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bijles-almere': typeof BijlesAlmereRoute
+  '/contact': typeof ContactRoute
+  '/economie-bijles-almere': typeof EconomieBijlesAlmereRoute
+  '/examenhulp-almere': typeof ExamenhulpAlmereRoute
+  '/faq': typeof FaqRoute
+  '/natuurkunde-bijles-almere': typeof NatuurkundeBijlesAlmereRoute
+  '/niveaus': typeof NiveausRoute
+  '/online-bijles': typeof OnlineBijlesRoute
+  '/over-joris': typeof OverJorisRoute
+  '/scheikunde-bijles-almere': typeof ScheikundeBijlesAlmereRoute
+  '/tarieven': typeof TarievenRoute
+  '/vakken': typeof VakkenRoute
+  '/wiskunde-bijles-almere': typeof WiskundeBijlesAlmereRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/bijles-almere'
+    | '/contact'
+    | '/economie-bijles-almere'
+    | '/examenhulp-almere'
+    | '/faq'
+    | '/natuurkunde-bijles-almere'
+    | '/niveaus'
+    | '/online-bijles'
+    | '/over-joris'
+    | '/scheikunde-bijles-almere'
+    | '/tarieven'
+    | '/vakken'
+    | '/wiskunde-bijles-almere'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/bijles-almere'
+    | '/contact'
+    | '/economie-bijles-almere'
+    | '/examenhulp-almere'
+    | '/faq'
+    | '/natuurkunde-bijles-almere'
+    | '/niveaus'
+    | '/online-bijles'
+    | '/over-joris'
+    | '/scheikunde-bijles-almere'
+    | '/tarieven'
+    | '/vakken'
+    | '/wiskunde-bijles-almere'
+  id:
+    | '__root__'
+    | '/'
+    | '/bijles-almere'
+    | '/contact'
+    | '/economie-bijles-almere'
+    | '/examenhulp-almere'
+    | '/faq'
+    | '/natuurkunde-bijles-almere'
+    | '/niveaus'
+    | '/online-bijles'
+    | '/over-joris'
+    | '/scheikunde-bijles-almere'
+    | '/tarieven'
+    | '/vakken'
+    | '/wiskunde-bijles-almere'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BijlesAlmereRoute: typeof BijlesAlmereRoute
+  ContactRoute: typeof ContactRoute
+  EconomieBijlesAlmereRoute: typeof EconomieBijlesAlmereRoute
+  ExamenhulpAlmereRoute: typeof ExamenhulpAlmereRoute
+  FaqRoute: typeof FaqRoute
+  NatuurkundeBijlesAlmereRoute: typeof NatuurkundeBijlesAlmereRoute
+  NiveausRoute: typeof NiveausRoute
+  OnlineBijlesRoute: typeof OnlineBijlesRoute
+  OverJorisRoute: typeof OverJorisRoute
+  ScheikundeBijlesAlmereRoute: typeof ScheikundeBijlesAlmereRoute
+  TarievenRoute: typeof TarievenRoute
+  VakkenRoute: typeof VakkenRoute
+  WiskundeBijlesAlmereRoute: typeof WiskundeBijlesAlmereRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +221,115 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bijles-almere': {
+      id: '/bijles-almere'
+      path: '/bijles-almere'
+      fullPath: '/bijles-almere'
+      preLoaderRoute: typeof BijlesAlmereRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/economie-bijles-almere': {
+      id: '/economie-bijles-almere'
+      path: '/economie-bijles-almere'
+      fullPath: '/economie-bijles-almere'
+      preLoaderRoute: typeof EconomieBijlesAlmereRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/examenhulp-almere': {
+      id: '/examenhulp-almere'
+      path: '/examenhulp-almere'
+      fullPath: '/examenhulp-almere'
+      preLoaderRoute: typeof ExamenhulpAlmereRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/natuurkunde-bijles-almere': {
+      id: '/natuurkunde-bijles-almere'
+      path: '/natuurkunde-bijles-almere'
+      fullPath: '/natuurkunde-bijles-almere'
+      preLoaderRoute: typeof NatuurkundeBijlesAlmereRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/niveaus': {
+      id: '/niveaus'
+      path: '/niveaus'
+      fullPath: '/niveaus'
+      preLoaderRoute: typeof NiveausRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/online-bijles': {
+      id: '/online-bijles'
+      path: '/online-bijles'
+      fullPath: '/online-bijles'
+      preLoaderRoute: typeof OnlineBijlesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/over-joris': {
+      id: '/over-joris'
+      path: '/over-joris'
+      fullPath: '/over-joris'
+      preLoaderRoute: typeof OverJorisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scheikunde-bijles-almere': {
+      id: '/scheikunde-bijles-almere'
+      path: '/scheikunde-bijles-almere'
+      fullPath: '/scheikunde-bijles-almere'
+      preLoaderRoute: typeof ScheikundeBijlesAlmereRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tarieven': {
+      id: '/tarieven'
+      path: '/tarieven'
+      fullPath: '/tarieven'
+      preLoaderRoute: typeof TarievenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vakken': {
+      id: '/vakken'
+      path: '/vakken'
+      fullPath: '/vakken'
+      preLoaderRoute: typeof VakkenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wiskunde-bijles-almere': {
+      id: '/wiskunde-bijles-almere'
+      path: '/wiskunde-bijles-almere'
+      fullPath: '/wiskunde-bijles-almere'
+      preLoaderRoute: typeof WiskundeBijlesAlmereRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BijlesAlmereRoute: BijlesAlmereRoute,
+  ContactRoute: ContactRoute,
+  EconomieBijlesAlmereRoute: EconomieBijlesAlmereRoute,
+  ExamenhulpAlmereRoute: ExamenhulpAlmereRoute,
+  FaqRoute: FaqRoute,
+  NatuurkundeBijlesAlmereRoute: NatuurkundeBijlesAlmereRoute,
+  NiveausRoute: NiveausRoute,
+  OnlineBijlesRoute: OnlineBijlesRoute,
+  OverJorisRoute: OverJorisRoute,
+  ScheikundeBijlesAlmereRoute: ScheikundeBijlesAlmereRoute,
+  TarievenRoute: TarievenRoute,
+  VakkenRoute: VakkenRoute,
+  WiskundeBijlesAlmereRoute: WiskundeBijlesAlmereRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
