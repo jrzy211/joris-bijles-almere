@@ -8,7 +8,7 @@ export const SITE = {
   phoneLink: "+31622555557",
   whatsappNumber: "31622555557",
   email: "jorisabma25@gmail.com",
-  origin: "https://joris-bijles-almere.lovable.app",
+  origin: "https://www.bijlesjoris.nl",
   whatsappMessage:
     "Hoi Joris! Ik heb een vraag over bijles en wil graag vrijblijvend kennismaken.",
 };
