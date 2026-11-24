@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/site";
 
 const title = "Vakken | Bijles wiskunde, natuurkunde, scheikunde & economie Almere";
 const description =
-  "Bijles in wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. In Almere aan huis of online in heel Nederland, vanaf €25 per uur.";
+  "Bijles in wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. Online in heel Nederland of aan huis in Almere (Literatuurwijk en Muziekwijk), €30 per uur.";
 
 export const Route = createFileRoute("/vakken")({
   component: VakkenPage,

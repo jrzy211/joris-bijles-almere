@@ -17,7 +17,7 @@ export const bijlesAlmere: LandingContent = {
   path: "/bijles-almere",
   title: "Bijles Almere | Persoonlijke bijlesdocent voor MAVO, HAVO & VWO",
   description:
-    "Bijles in Almere van Joris Abma: wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. Aan huis in Almere of online. €25 per uur, geen abonnement.",
+    "Bijles in Almere van Joris Abma: wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. Aan huis in Almere of online. €30 per uur, geen abonnement.",
   h1: "Bijles in Almere van één vaste bijlesdocent",
   intro: [
     "Ik ben Joris Abma, bijlesdocent in Almere. Bij mij krijg je geen wisselende docenten en geen groepsklas: je hebt elke week hetzelfde vaste uur, met iemand die de stof, de methode en de toetsplanning van jouw school inmiddels kent.",
@@ -61,15 +61,15 @@ export const bijlesAlmere: LandingContent = {
     ],
   },
   local:
-    "Ik geef bijles aan huis in Almere Stad, Almere Buiten, Almere Poort, Almere Haven en Almere Hout. Woon je net buiten Almere, dan kijken we samen of het qua reistijd past — anders is online bijles vaak de makkelijkste oplossing.",
+    "Aan huis geef ik bijles in de regio Literatuurwijk en Muziekwijk in Almere. Woon je daarbuiten, dan is online bijles de oplossing — die geef ik in heel Nederland.",
   faq: [
     {
       q: "Wat kost bijles in Almere?",
-      a: "Reguliere bijles kost €25 per uur. Examenvoorbereiding en gevorderde bijles kosten €30 per uur. Er is geen abonnement en geen langdurige verplichting.",
+      a: "Een les kost €30 per uur, zowel reguliere bijles als examenvoorbereiding. Er is geen abonnement en geen langdurige verplichting.",
     },
     {
       q: "Kom je aan huis in heel Almere?",
-      a: "Ja, ik geef bijles aan huis in Almere en de directe omgeving. Waar dat qua reistijd lastig wordt, is online bijles een goed alternatief.",
+      a: "Nee, alleen als het dichtbij genoeg is: in de regio Literatuurwijk en Muziekwijk. Daarbuiten is online bijles een goed alternatief.",
     },
     {
       q: "Kan ik eerst vrijblijvend kennismaken?",
@@ -84,7 +84,7 @@ export const wiskunde: LandingContent = {
   path: "/wiskunde-bijles-almere",
   title: "Wiskunde bijles Almere | Wiskunde A, B en C — MAVO, HAVO, VWO",
   description:
-    "Wiskunde bijles in Almere en online. Wiskunde A, B en C voor MAVO, HAVO en VWO: algebra, formules, differentiëren en examentraining. €25 per uur, vrijblijvend kennismaken.",
+    "Wiskunde bijles in Almere en online. Wiskunde A, B en C voor MAVO, HAVO en VWO: algebra, formules, differentiëren en examentraining. €30 per uur, vrijblijvend kennismaken.",
   h1: "Wiskunde bijles in Almere en online",
   intro: [
     "Wiskunde is het vak waar de meeste leerlingen mij voor benaderen. Vrijwel altijd blijkt het probleem niet het hoofdstuk van deze week te zijn, maar iets wat een jaar eerder is blijven liggen: breuken, machten, herleiden of het oplossen van vergelijkingen.",
@@ -125,7 +125,7 @@ export const wiskunde: LandingContent = {
     ],
   },
   local:
-    "Wiskunde bijles aan huis is mogelijk in Almere Stad, Almere Buiten, Almere Poort, Almere Haven en Almere Hout. Online werkt wiskunde prima met een digitaal whiteboard, waarop we samen schrijven en rekenen.",
+    "Wiskunde bijles aan huis is mogelijk in de regio Literatuurwijk en Muziekwijk in Almere. Online werkt wiskunde prima met een digitaal whiteboard, waarop we samen schrijven en rekenen.",
   faq: [
     {
       q: "Geef je ook wiskunde B op VWO-niveau?",
@@ -148,7 +148,7 @@ export const natuurkunde: LandingContent = {
   path: "/natuurkunde-bijles-almere",
   title: "Natuurkunde bijles Almere | HAVO & VWO, online en aan huis",
   description:
-    "Natuurkunde bijles in Almere en online voor HAVO en VWO: mechanica, elektriciteit, energie en examentraining. Rustige uitleg, €25 per uur, vrijblijvende kennismaking.",
+    "Natuurkunde bijles in Almere en online voor HAVO en VWO: mechanica, elektriciteit, energie en examentraining. Rustige uitleg, €30 per uur, vrijblijvende kennismaking.",
   h1: "Natuurkunde bijles in Almere en online",
   intro: [
     "Bij natuurkunde gaat het bij veel leerlingen niet mis bij het rekenen, maar bij het lezen van de vraag. Er staat een verhaal, en het is de kunst om daaruit te halen welke grootheden je hebt en welke je zoekt.",
@@ -186,7 +186,7 @@ export const natuurkunde: LandingContent = {
     ],
   },
   local:
-    "Natuurkunde bijles aan huis geef ik in Almere Stad, Almere Buiten, Almere Poort, Almere Haven en Almere Hout; online is beschikbaar in heel Nederland.",
+    "Natuurkunde bijles aan huis geef ik in de regio Literatuurwijk en Muziekwijk in Almere; online is beschikbaar in heel Nederland.",
   faq: [
     {
       q: "Geef je natuurkunde op VWO-niveau?",
@@ -209,7 +209,7 @@ export const scheikunde: LandingContent = {
   path: "/scheikunde-bijles-almere",
   title: "Scheikunde bijles Almere | HAVO & VWO, rekenen en organische chemie",
   description:
-    "Scheikunde bijles in Almere en online voor HAVO en VWO: molberekeningen, reactievergelijkingen, zuren en basen en organische chemie. €25 per uur, vrijblijvend kennismaken.",
+    "Scheikunde bijles in Almere en online voor HAVO en VWO: molberekeningen, reactievergelijkingen, zuren en basen en organische chemie. €30 per uur, vrijblijvend kennismaken.",
   h1: "Scheikunde bijles in Almere en online",
   intro: [
     "Scheikunde is een vak dat zich opstapelt: wie molberekeningen niet stevig beheerst, loopt er later bij zuren en basen en bij evenwichten opnieuw tegenaan. Daarom werk ik bij scheikunde graag in vaste stappen.",
@@ -244,7 +244,7 @@ export const scheikunde: LandingContent = {
     ],
   },
   local:
-    "Scheikunde bijles aan huis in Almere Stad, Almere Buiten, Almere Poort, Almere Haven en Almere Hout, of online vanuit heel Nederland.",
+    "Scheikunde bijles aan huis in de regio Literatuurwijk en Muziekwijk in Almere, of online vanuit heel Nederland.",
   faq: [
     {
       q: "Vanaf welk leerjaar geef je scheikunde?",
@@ -267,7 +267,7 @@ export const economie: LandingContent = {
   path: "/economie-bijles-almere",
   title: "Economie bijles Almere | Economie & bedrijfseconomie, MAVO t/m VWO",
   description:
-    "Economie bijles in Almere en online voor MAVO, HAVO en VWO. Micro, macro en bedrijfseconomie, uitgelegd door een afgestudeerde VU-student Bedrijfskunde (Economie). €25 per uur.",
+    "Economie bijles in Almere en online voor MAVO, HAVO en VWO. Micro, macro en bedrijfseconomie, uitgelegd door een afgestudeerde VU-student Bedrijfskunde (Economie). €30 per uur.",
   h1: "Economie bijles in Almere en online",
   intro: [
     "Economie is mijn eigen vakgebied: ik rondde in 2026 de bachelor Bedrijfskunde met hoofdrichting Economie af aan de Vrije Universiteit Amsterdam. Dat merk je vooral aan de voorbeelden — begrippen worden een stuk concreter als je ze aan de actualiteit kunt koppelen.",
@@ -302,7 +302,7 @@ export const economie: LandingContent = {
     ],
   },
   local:
-    "Economie bijles aan huis in Almere Stad, Almere Buiten, Almere Poort, Almere Haven en Almere Hout, of online in heel Nederland.",
+    "Economie bijles aan huis in de regio Literatuurwijk en Muziekwijk in Almere, of online in heel Nederland.",
   faq: [
     {
       q: "Geef je ook bedrijfseconomie?",
@@ -360,7 +360,7 @@ export const examenhulp: LandingContent = {
     ],
   },
   local:
-    "Examentraining geef ik aan huis in Almere en omgeving en online in heel Nederland. In de weken voor het examen is er ruimte voor extra sessies.",
+    "Examentraining geef ik online in heel Nederland en aan huis in de regio Literatuurwijk en Muziekwijk in Almere. In de weken voor het examen is er ruimte voor extra sessies.",
   faq: [
     {
       q: "Wanneer moet ik met examenhulp beginnen?",
@@ -383,7 +383,7 @@ export const online: LandingContent = {
   path: "/online-bijles",
   title: "Online bijles Nederland | Wiskunde, natuurkunde, scheikunde, economie",
   description:
-    "Online bijles in heel Nederland voor MAVO, HAVO en VWO: wiskunde, natuurkunde, scheikunde en economie. Video plus digitaal whiteboard, €25 per uur, vrijblijvend kennismaken.",
+    "Online bijles in heel Nederland voor MAVO, HAVO en VWO: wiskunde, natuurkunde, scheikunde en economie. Video plus digitaal whiteboard, €30 per uur, vrijblijvend kennismaken.",
   h1: "Online bijles in heel Nederland",
   intro: [
     "Niet iedereen woont in Almere, en niet elk gezin heeft ruimte om er nog een reis bij te plannen. Online bijles lost dat op: dezelfde persoonlijke begeleiding, zonder reistijd en makkelijker in te passen op een doordeweekse avond.",
@@ -428,7 +428,7 @@ export const online: LandingContent = {
     },
     {
       q: "Wat kost online bijles?",
-      a: "€25 per uur voor reguliere bijles en €30 per uur voor examenvoorbereiding. Geen abonnement.",
+      a: "€30 per uur, zowel voor reguliere bijles als voor examenvoorbereiding. Geen abonnement.",
     },
   ],
   ctaTitle: "Online bijles proberen?",

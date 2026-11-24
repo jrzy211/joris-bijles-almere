@@ -4,9 +4,9 @@ import { Page } from "@/components/site/Layout";
 import { FinalCta, Section, SectionHeading } from "@/components/site/Blocks";
 import { pageMeta } from "@/lib/site";
 
-const title = "Tarieven bijles Almere | €25 per uur, geen abonnement";
+const title = "Tarieven bijles | €30 per uur, geen abonnement";
 const description =
-  "Transparante tarieven van Joris Abma Bijles: €25 per uur voor reguliere bijles en €30 per uur voor examenvoorbereiding. Geen abonnement, geen langdurige verplichting.";
+  "Transparante tarieven van Joris Abma Bijles: €30 per uur voor bijles en examenvoorbereiding, online in heel Nederland. Geen abonnement, geen langdurige verplichting.";
 
 export const Route = createFileRoute("/tarieven")({
   component: TarievenPage,
@@ -16,10 +16,14 @@ export const Route = createFileRoute("/tarieven")({
 export const prices = [
   {
     name: "Reguliere bijles",
-    price: "€25",
+    price: "€30",
     unit: "per uur",
     desc: "Wiskunde, natuurkunde, scheikunde, economie en huiswerkbegeleiding voor MAVO, HAVO en VWO.",
-    points: ["Online of aan huis in Almere", "Vast wekelijks moment mogelijk", "Geen abonnement"],
+    points: [
+      "Online in heel Nederland",
+      "Aan huis in Almere rond de Literatuurwijk en Muziekwijk",
+      "Geen abonnement",
+    ],
   },
   {
     name: "Examenvoorbereiding",
@@ -102,7 +106,7 @@ function TarievenPage() {
             {[
               "Geen abonnement en geen langdurige verplichting.",
               "De kennismaking van ongeveer 15 minuten is gratis.",
-              "Bijles aan huis binnen Almere zonder extra reiskosten.",
+              "Bijles aan huis alleen in de regio Literatuurwijk en Muziekwijk, zonder extra reiskosten.",
               "Een les kosteloos verzetten kan tot 24 uur van tevoren.",
             ].map((t) => (
               <li key={t} className="flex items-start gap-2.5 text-base">

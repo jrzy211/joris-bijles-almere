@@ -13,7 +13,7 @@ export const generalFaq = [
   },
   {
     q: "Geef je bijles aan huis in Almere?",
-    a: "Ja, ik kom aan huis in Almere en de directe omgeving, waaronder Almere Stad, Almere Buiten, Almere Poort, Almere Haven en Almere Hout.",
+    a: "Alleen als het dichtbij genoeg is: ik kom aan huis in de regio Literatuurwijk en Muziekwijk in Almere. Daarbuiten geef ik online bijles, in heel Nederland.",
   },
   {
     q: "Welke vakken geef je?",
@@ -25,7 +25,7 @@ export const generalFaq = [
   },
   {
     q: "Wat kost een uur bijles?",
-    a: "Reguliere bijles kost €25 per uur. Examenvoorbereiding en gevorderde bijles kosten €30 per uur.",
+    a: "Een les kost €30 per uur, zowel voor reguliere bijles als voor examenvoorbereiding.",
   },
   {
     q: "Is er een abonnement?",

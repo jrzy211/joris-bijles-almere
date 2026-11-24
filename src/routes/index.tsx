@@ -20,11 +20,10 @@ import {
 import { subjects, levels } from "@/content/vakken";
 import { generalFaq } from "@/content/faq";
 import { areas, faqSchema, localBusinessSchema, pageMeta } from "@/lib/site";
-import heroImg from "@/assets/joris-hero.jpg";
 
-const title = "Bijles Almere | Wiskunde, natuurkunde, scheikunde & economie — Joris Abma";
+const title = "Online bijles & bijles Almere | Wiskunde, natuurkunde, scheikunde & economie — Joris Abma";
 const description =
-  "Persoonlijke bijles in Almere en online in heel Nederland. Wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. Vanaf €25 per uur, gratis kennismaking.";
+  "Persoonlijke online bijles in heel Nederland, en aan huis in Almere rond de Literatuurwijk en Muziekwijk. Wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. €30 per uur, gratis kennismaking.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -40,7 +39,7 @@ export const Route = createFileRoute("/")({
 const trust = [
   { icon: GraduationCap, label: "VU Amsterdam" },
   { icon: Clock, label: "Bijles sinds 2025" },
-  { icon: Laptop, label: "Online + Almere" },
+  { icon: Laptop, label: "Online, heel NL" },
   { icon: CheckCircle2, label: "MAVO / HAVO / VWO" },
 ];
 
@@ -74,10 +73,10 @@ function Index() {
     <Page>
       {/* 1. HERO */}
       <section className="border-b border-border bg-accent/40">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
-          <div>
+        <div className="mx-auto max-w-6xl px-5 py-14 lg:py-20">
+          <div className="max-w-3xl">
             <h1 className="text-balance text-4xl leading-[1.08] sm:text-5xl lg:text-[3.3rem]">
-              Persoonlijke bijles in Almere &amp; online
+              Persoonlijke bijles, online in heel Nederland
             </h1>
             <p className="mt-5 max-w-xl text-xl leading-relaxed text-foreground">
               Wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO.
@@ -98,15 +97,6 @@ function Index() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <img
-              src={heroImg}
-              width={1200}
-              height={1504}
-              alt="Joris Abma geeft bijles wiskunde aan een middelbare scholier in Almere"
-              className="w-full rounded-2xl object-cover shadow-[var(--shadow-lift)]"
-            />
           </div>
         </div>
       </section>
@@ -217,15 +207,7 @@ function Index() {
 
       {/* 6. ABOUT */}
       <Section id="over">
-        <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-          <img
-            src={heroImg}
-            width={1200}
-            height={1504}
-            loading="lazy"
-            alt="Portret van bijlesdocent Joris Abma uit Almere"
-            className="w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
-          />
+        <div className="max-w-3xl">
           <div>
             <SectionHeading eyebrow="Over Joris" title="Wie je voor je hebt" />
             <div className="mt-5 space-y-4 text-lg leading-relaxed text-muted-foreground">
@@ -293,11 +275,11 @@ function Index() {
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           <article className="surface-card p-8">
             <h3 className="text-xl">Reguliere bijles</h3>
-            <p className="mt-4 font-display text-5xl">€25</p>
+            <p className="mt-4 font-display text-5xl">€30</p>
             <p className="mt-1 text-sm text-muted-foreground">per uur</p>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              Wiskunde, natuurkunde, scheikunde, economie en huiswerkbegeleiding, online of aan huis
-              in Almere.
+              Wiskunde, natuurkunde, scheikunde, economie en huiswerkbegeleiding, online in heel
+              Nederland of aan huis in Almere.
             </p>
           </article>
           <article className="rounded-xl bg-navy p-8 text-primary-foreground shadow-[var(--shadow-lift)]">
@@ -352,8 +334,8 @@ function Index() {
           <div>
             <SectionHeading
               eyebrow="Locatie"
-              title="Bijles aan huis in Almere en omgeving"
-              intro="Online bijles door heel Nederland. Ik werk zonder eigen praktijkadres: lessen vinden bij jou thuis of online plaats."
+              title="Online in heel Nederland, aan huis rond de Literatuurwijk en Muziekwijk"
+              intro="Online bijles is de standaard en kan overal in Nederland. Aan huis kom ik alleen als het dichtbij genoeg is: in de regio Literatuurwijk en Muziekwijk in Almere. Ik werk zonder eigen praktijkadres."
             />
             <div className="mt-8 flex flex-wrap gap-2">
               {areas.map((a) => (
@@ -367,14 +349,14 @@ function Index() {
               ))}
             </div>
             <p className="mt-6 text-[15px] leading-relaxed text-muted-foreground">
-              Woon je buiten Almere? Dan is{" "}
+              Woon je ergens anders? Dan is{" "}
               <Link
                 to="/online-bijles"
                 className="font-semibold text-sky underline-offset-4 hover:underline"
               >
                 online bijles
               </Link>{" "}
-              vaak de makkelijkste oplossing — even effectief en zonder reistijd.
+              de oplossing — even effectief en zonder reistijd.
             </p>
           </div>
         </div>

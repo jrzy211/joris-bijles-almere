@@ -78,8 +78,8 @@ function ContactPage() {
       <Section tone="muted">
         <SectionHeading
           eyebrow="Locatie"
-          title="Bijles aan huis in Almere en online in heel Nederland"
-          intro="Joris Abma Bijles is gevestigd in Almere, Flevoland. Ik geef bijles bij leerlingen thuis in Almere en omgeving; daarbuiten geef ik online les. Ik werk zonder eigen praktijkadres, dus lessen vinden bij jou thuis of online plaats."
+          title="Online bijles in heel Nederland, aan huis rond de Literatuurwijk en Muziekwijk"
+          intro="Joris Abma Bijles is gevestigd in Almere, Flevoland. Online bijles geef ik in heel Nederland. Aan huis kom ik alleen als het dichtbij genoeg is: in de regio Literatuurwijk en Muziekwijk in Almere. Ik werk zonder eigen praktijkadres, dus lessen vinden online of bij jou thuis plaats."
         />
         <div className="mt-8 flex flex-wrap gap-2">
           {areas.map((a) => (

@@ -20,13 +20,7 @@ export const whatsappUrl = `https://wa.me/${SITE.whatsappNumber}?text=${encodeUR
 export const telUrl = `tel:${SITE.phoneLink}`;
 export const mailUrl = `mailto:${SITE.email}`;
 
-export const areas = [
-  "Almere Stad",
-  "Almere Buiten",
-  "Almere Poort",
-  "Almere Haven",
-  "Almere Hout",
-];
+export const areas = ["Almere Literatuurwijk", "Almere Muziekwijk"];
 
 export function localBusinessSchema() {
   return {
@@ -35,11 +29,11 @@ export function localBusinessSchema() {
     "@id": `${SITE.origin}/#business`,
     name: SITE.name,
     description:
-      "Persoonlijke bijles in wiskunde, natuurkunde, scheikunde en economie in Almere en online in heel Nederland, voor MAVO, HAVO en VWO.",
+      "Persoonlijke online bijles in wiskunde, natuurkunde, scheikunde en economie in heel Nederland, en aan huis in Almere rond de Literatuurwijk en Muziekwijk, voor MAVO, HAVO en VWO.",
     url: SITE.origin,
     telephone: SITE.phoneLink,
     email: SITE.email,
-    priceRange: "€25 - €30",
+    priceRange: "€30",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Almere",

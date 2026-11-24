@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Page } from "@/components/site/Layout";
 import { Bullets, FinalCta, Section, SectionHeading } from "@/components/site/Blocks";
 import { SITE, pageMeta } from "@/lib/site";
-import portret from "@/assets/joris-hero.jpg";
 
 const title = "Over Joris Abma | Bijlesdocent in Almere, VU Amsterdam";
 const description =
@@ -36,14 +35,7 @@ function OverPage() {
   return (
     <Page>
       <Section>
-        <div className="grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr]">
-          <img
-            src={portret}
-            width={1200}
-            height={1504}
-            alt="Joris Abma, bijlesdocent in Almere, legt een wiskundeopgave uit aan een leerling"
-            className="w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
-          />
+        <div className="max-w-3xl">
           <div>
             <p className="eyebrow">Over Joris</p>
             <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
@@ -79,7 +71,7 @@ function OverPage() {
                   "BSc Bedrijfskunde (Economie), VU Amsterdam, 2026",
                   "Bijlesdocent sinds 2025",
                   "MAVO, HAVO en VWO, alle leerjaren",
-                  "Online en aan huis in Almere",
+                  "Online in heel Nederland; aan huis rond de Literatuurwijk en Muziekwijk",
                 ]}
               />
             </div>
