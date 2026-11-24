@@ -21,7 +21,8 @@ import { subjects, levels } from "@/content/vakken";
 import { generalFaq } from "@/content/faq";
 import { areas, faqSchema, localBusinessSchema, pageMeta } from "@/lib/site";
 
-const title = "Online bijles & bijles Almere | Wiskunde, natuurkunde, scheikunde & economie — Joris Abma";
+const title =
+  "Online bijles & bijles Almere | Wiskunde, natuurkunde, scheikunde & economie — Joris Abma";
 const description =
   "Persoonlijke online bijles in heel Nederland, en aan huis in Almere rond de Literatuurwijk en Muziekwijk. Wiskunde, natuurkunde, scheikunde en economie voor MAVO, HAVO en VWO. €30 per uur, gratis kennismaking.";
 
@@ -66,6 +67,24 @@ const availability = [
   { d: "Vrijdag", t: "Geen bijles", off: true },
   { d: "Zaterdag", t: "Hele dag" },
   { d: "Zondag", t: "Geen bijles", off: true },
+];
+
+const reviews = [
+  {
+    quote:
+      "Altijd fijne lessen met Joris. Sinds hem heb ik stabiel hogere resultaten, met een keer zelfs een 10 en een 9!",
+    place: "Almere",
+  },
+  {
+    quote:
+      "Joris heeft echt harde achterstanden naar voldoendes weten te halen, door goede samenwerking en gestructureerder werken. Al een keer overgegaan, mede door zijn hulp.",
+    place: "Almere",
+  },
+  {
+    quote:
+      "Ik moest dit jaar wiskunde goed bijspijkeren en met de hulp van de bijlessen gaat dat erg goed: van cijfers rond de 3–4 naar voldoendes rond de 7 (:",
+    place: "Almere",
+  },
 ];
 
 function Index() {
@@ -324,7 +343,9 @@ function Index() {
                   >
                     {a.d}
                   </span>
-                  <span className={`text-sm ${a.off ? "text-muted-foreground" : "font-medium text-sky"}`}>
+                  <span
+                    className={`text-sm ${a.off ? "text-muted-foreground" : "font-medium text-sky"}`}
+                  >
                     {a.t}
                   </span>
                 </div>
@@ -367,25 +388,26 @@ function Index() {
         <SectionHeading
           eyebrow="Reviews"
           title="Ervaringen van leerlingen en ouders"
-          intro="Ik plaats hier alleen echte reacties. Heb je bij mij bijles gehad en wil je iets achterlaten? Stuur het gerust door, dan komt het hier te staan."
+          intro="Echte reacties, anoniem geplaatst. Heb je bij mij bijles gehad en wil je ook iets achterlaten? Stuur het gerust door."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="flex flex-col items-start rounded-xl border border-dashed border-border bg-card/60 p-7"
-            >
-              <MessageSquare className="size-5 text-muted-foreground" />
-              <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
-                Ruimte voor een ervaring van een leerling of ouder. Zodra de eerste reacties binnen
-                zijn, komen ze hier te staan.
-              </p>
-              <div className="mt-6 flex gap-0.5 text-muted-foreground/40">
+          {reviews.map((r) => (
+            <figure key={r.quote} className="surface-card flex flex-col p-7">
+              <div className="flex gap-0.5 text-sky" aria-label="5 van 5 sterren">
                 {Array.from({ length: 5 }).map((_, s) => (
-                  <Star key={s} className="size-3.5" />
+                  <Star key={s} className="size-4 fill-current" aria-hidden="true" />
                 ))}
               </div>
-            </div>
+              <blockquote className="mt-4 flex-1 text-[15px] leading-relaxed text-foreground">
+                “{r.quote}”
+              </blockquote>
+              <figcaption className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
+                <MessageSquare className="size-4 shrink-0" aria-hidden="true" />
+                <span>
+                  <span className="font-semibold text-foreground">Anoniem</span> · {r.place}
+                </span>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </Section>
